@@ -25,4 +25,10 @@ window.onload = function () {
   game.state.add('game', ns.Game);
 
   game.state.start('boot');
+
+  document.addEventListener("keydown", function (e) {
+    if (e.code === "Escape") {
+      window.close();
+    }
+  });
 };

@@ -101,13 +101,13 @@
 
 		if (this.state.gameState === 0) {	// Pre-play
 
-			if (keyboard.isDown(Phaser.Keyboard.W)) {
+			if (keyboard.isDown(Phaser.Keyboard.ENTER)) {
 				this.state.statePreplay2Play();
 			}
 
 		} else if (this.state.gameState === 2) {	// Post-play (game over)
 
-			if (keyboard.isDown(Phaser.Keyboard.W)) {
+			if (keyboard.isDown(Phaser.Keyboard.ENTER)) {
 				this.game.state.start('menu');
 			}
 
@@ -135,7 +135,7 @@
 
 			// Fire
 
-			if (keyboard.isDown(Phaser.Keyboard.W)) {
+			if (keyboard.isDown(Phaser.Keyboard.ENTER)) {
 				this.fire();
 			}
 		}
